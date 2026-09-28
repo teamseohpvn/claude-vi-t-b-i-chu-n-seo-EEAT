@@ -6,7 +6,7 @@ description: >
   and natural readability. Follows the 6 pillars of dual optimization.
   Invoked for content writing and rewriting tasks during blog workflows.
 tools:
-  - Read
+  - Read`n  - read_file (Gemini CLI alias)
   - Write
   - Edit
   - Grep
@@ -160,7 +160,7 @@ After completing the full draft, before returning content:
 2. Recommend the orchestrator run a quick check (this agent does NOT have
    the Bash tool, so the check is delegated): the orchestrator can invoke
    the analyze script with the draft. The script is installed at
-   `~/.claude/skills/blog/scripts/analyze_blog.py` after running install.sh
+   `$HOME/.gemini/scripts/analyze_blog.py` after running install.sh
    (or at `scripts/analyze_blog.py` from a source clone). Pass
    `--category content` to focus on the readability sub-score. The
    orchestrator feeds the score back to refine the draft. Closes audit
@@ -197,3 +197,6 @@ Before returning content, verify:
 - [ ] Every embedded image URL was verified by the researcher (Verified column = Yes)
 - [ ] No page URLs used as image src: only direct CDN/image file URLs
 - [ ] Image alt text is a full descriptive sentence (not just keywords)
+
+
+> Gemini CLI: same role, tools map to read_file/write_file/edit/glob/grep/run_shell. No Bash? delegate script run to orchestrator.

@@ -252,3 +252,6 @@ After saving, inform the user:
 ## Cross-reference
 
 For evidence-led audit prompts beyond this site-wide health pass, see `/blog flow optimize` (visibility, CTR, schema, extraction audits) and `/blog flow win` (dual-surface scorecard, conversion audit).
+
+## Gemini CLI note
+Run under Gemini CLI by loading adapters/gemini/GEMINI.md first. Map Task(subagent)->sequential inline steps, tools Read/Write/Edit/Glob/Grep/Bash/WebFetch/WebSearch -> read_file/write_file/edit/glob/grep/run_shell/web_fetch/web_search, scripts dir $HOME/.gemini/scripts (override GEMINI_BLOG_SCRIPTS_DIR).

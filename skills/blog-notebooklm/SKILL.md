@@ -257,3 +257,6 @@ opening an additional persistent profile or copying cookies into another file.
 Load on-demand: do NOT load all at startup:
 - `references/commands.md`: Full CLI commands, parameters, and workflow patterns
 - `references/troubleshooting.md`: Error solutions, recovery procedures, debugging
+
+## Gemini CLI note
+Run under Gemini CLI by loading adapters/gemini/GEMINI.md first. Map Task(subagent)->sequential inline steps, tools Read/Write/Edit/Glob/Grep/Bash/WebFetch/WebSearch -> read_file/write_file/edit/glob/grep/run_shell/web_fetch/web_search, scripts dir $HOME/.gemini/scripts (override GEMINI_BLOG_SCRIPTS_DIR).

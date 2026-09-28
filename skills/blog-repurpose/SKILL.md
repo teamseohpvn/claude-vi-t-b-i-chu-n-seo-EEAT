@@ -293,3 +293,6 @@ Present a summary after saving:
 - Use platform analytics and audience timezone data for posting times. If no
   analytics exist, label timing advice as a hypothesis to test.
 ```
+
+## Gemini CLI note
+Run under Gemini CLI by loading adapters/gemini/GEMINI.md first. Map Task(subagent)->sequential inline steps, tools Read/Write/Edit/Glob/Grep/Bash/WebFetch/WebSearch -> read_file/write_file/edit/glob/grep/run_shell/web_fetch/web_search, scripts dir $HOME/.gemini/scripts (override GEMINI_BLOG_SCRIPTS_DIR).

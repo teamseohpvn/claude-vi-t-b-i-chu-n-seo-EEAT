@@ -221,3 +221,6 @@ When intent is genuinely different despite surface-level keyword similarity.
   rate limits. If it still fails, switch to local mode for remaining URLs and
   report the failed endpoint without credentials
 - **Single-post directory**: If only one blog post exists, report "Cannibalization analysis requires at least 2 posts" and exit gracefully
+
+## Gemini CLI note
+Run under Gemini CLI by loading adapters/gemini/GEMINI.md first. Map Task(subagent)->sequential inline steps, tools Read/Write/Edit/Glob/Grep/Bash/WebFetch/WebSearch -> read_file/write_file/edit/glob/grep/run_shell/web_fetch/web_search, scripts dir $HOME/.gemini/scripts (override GEMINI_BLOG_SCRIPTS_DIR).

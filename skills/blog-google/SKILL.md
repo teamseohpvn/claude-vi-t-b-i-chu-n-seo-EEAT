@@ -320,3 +320,6 @@ section with estimated metrics.
 | GA4 property not found | Find property ID in GA4 Admin > Property Details. |
 | Indexing API quota exceeded | 200/day limit. Prioritize most important URLs. |
 | Rate limit (429) | Wait and retry with exponential backoff. |
+
+## Gemini CLI note
+Run under Gemini CLI by loading adapters/gemini/GEMINI.md first. Map Task(subagent)->sequential inline steps, tools Read/Write/Edit/Glob/Grep/Bash/WebFetch/WebSearch -> read_file/write_file/edit/glob/grep/run_shell/web_fetch/web_search, scripts dir $HOME/.gemini/scripts (override GEMINI_BLOG_SCRIPTS_DIR).

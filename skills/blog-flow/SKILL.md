@@ -191,3 +191,6 @@ license header injected by the sync script.
 | `sync_flow.py` network error | Display the script's stderr. Check rate limits with `gh api rate_limit` if `gh` is installed. |
 | `sync_flow.py` 403 after retry | Set `GITHUB_TOKEN` or run `gh auth login`, then retry. |
 | Path-traversal abort | The sync target tried to escape the references directory. Inspect the upstream repo and pin to a known-good `--ref`. |
+
+## Gemini CLI note
+Run under Gemini CLI by loading adapters/gemini/GEMINI.md first. Map Task(subagent)->sequential inline steps, tools Read/Write/Edit/Glob/Grep/Bash/WebFetch/WebSearch -> read_file/write_file/edit/glob/grep/run_shell/web_fetch/web_search, scripts dir $HOME/.gemini/scripts (override GEMINI_BLOG_SCRIPTS_DIR).

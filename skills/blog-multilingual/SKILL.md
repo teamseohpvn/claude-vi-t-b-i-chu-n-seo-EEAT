@@ -340,3 +340,6 @@ entity and AI-citation signal, not a Google rich result target.
 | `/blog translate <file> --to de,fr,es` | Translate one file into target languages |
 | `/blog localize <file> --locale de-DE` | Cultural deep-adaptation of one translated file |
 | `/blog locale-audit <directory>` | Multilingual QA across a directory |
+
+## Gemini CLI note
+Run under Gemini CLI by loading adapters/gemini/GEMINI.md first. Map Task(subagent)->sequential inline steps, tools Read/Write/Edit/Glob/Grep/Bash/WebFetch/WebSearch -> read_file/write_file/edit/glob/grep/run_shell/web_fetch/web_search, scripts dir $HOME/.gemini/scripts (override GEMINI_BLOG_SCRIPTS_DIR).

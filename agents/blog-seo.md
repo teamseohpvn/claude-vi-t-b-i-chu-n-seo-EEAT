@@ -6,7 +6,7 @@ description: >
   internal/external links, canonical URL, OG meta tags, Twitter Card,
   URL structure. Produces a pass/fail checklist with specific fixes.
 tools:
-  - Read
+  - Read`n  - read_file (Gemini CLI alias)
   - Grep
   - Glob
 ---
@@ -127,3 +127,6 @@ rewrite content. You identify issues and prescribe fixes.
 - Report exact character counts for title and meta description
 - List specific broken links if found
 - For heading hierarchy, show the actual hierarchy tree
+
+
+> Gemini CLI: same role, tools map to read_file/write_file/edit/glob/grep/run_shell. No Bash? delegate script run to orchestrator.

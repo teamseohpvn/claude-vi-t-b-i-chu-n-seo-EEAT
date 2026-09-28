@@ -9,7 +9,7 @@ description: >
   `blog-multilingual` orchestrators when a single source-to-target language
   translation is needed. One agent invocation handles one target language.
 tools:
-  - Read
+  - Read`n  - read_file (Gemini CLI alias)
   - Write
   - Edit
   - Glob
@@ -170,3 +170,6 @@ Never produce:
    - Keyword localization decisions (which kept, which swapped).
    - Number of structural elements translated (H2s, FAQs, charts, images).
    - Any quality-check items that needed a second pass.
+
+
+> Gemini CLI: same role, tools map to read_file/write_file/edit/glob/grep/run_shell. No Bash? delegate script run to orchestrator.

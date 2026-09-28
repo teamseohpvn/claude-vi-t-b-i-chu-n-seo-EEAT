@@ -215,3 +215,6 @@ translator agent should re-pass any flagged passage before delivery.
 - Next step (cultural depth): `/blog localize <file> --locale <code>`
 - QA sweep across all language versions: `/blog locale-audit <directory>`
 - One-command pipeline: `/blog multilingual <topic> --languages <codes>`
+
+## Gemini CLI note
+Run under Gemini CLI by loading adapters/gemini/GEMINI.md first. Map Task(subagent)->sequential inline steps, tools Read/Write/Edit/Glob/Grep/Bash/WebFetch/WebSearch -> read_file/write_file/edit/glob/grep/run_shell/web_fetch/web_search, scripts dir $HOME/.gemini/scripts (override GEMINI_BLOG_SCRIPTS_DIR).

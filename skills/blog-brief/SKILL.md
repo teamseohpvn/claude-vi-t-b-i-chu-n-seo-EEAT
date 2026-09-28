@@ -279,3 +279,6 @@ statistic for every section.
 
 Save to the user's project as `briefs/[slug]-brief.md` or to a location
 they specify. Create the `briefs/` directory if it does not exist. Confirm the brief is ready for `/blog write`.
+
+## Gemini CLI note
+Run under Gemini CLI by loading adapters/gemini/GEMINI.md first. Map Task(subagent)->sequential inline steps, tools Read/Write/Edit/Glob/Grep/Bash/WebFetch/WebSearch -> read_file/write_file/edit/glob/grep/run_shell/web_fetch/web_search, scripts dir $HOME/.gemini/scripts (override GEMINI_BLOG_SCRIPTS_DIR).

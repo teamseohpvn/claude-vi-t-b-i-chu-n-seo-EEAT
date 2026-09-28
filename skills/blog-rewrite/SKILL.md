@@ -362,3 +362,6 @@ When invoked as `/blog update <file>`, focus on freshness:
 4. Update `lastUpdated` in frontmatter
 5. Preserve the existing structure - minimize rewrites
 6. Target: genuine freshness only. Replace stale statistics, add real new developments, and update `lastUpdated`/`dateModified`; do not rewrite to hit a percentage-change threshold.
+
+## Gemini CLI note
+Run under Gemini CLI by loading adapters/gemini/GEMINI.md first. Map Task(subagent)->sequential inline steps, tools Read/Write/Edit/Glob/Grep/Bash/WebFetch/WebSearch -> read_file/write_file/edit/glob/grep/run_shell/web_fetch/web_search, scripts dir $HOME/.gemini/scripts (override GEMINI_BLOG_SCRIPTS_DIR).

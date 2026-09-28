@@ -6,7 +6,7 @@ description: >
   editorial style diagnostics, validates source quality, and flags unsupported
   factual or first-hand claims. Invoked for quality review tasks during blog workflows.
 tools:
-  - Read
+  - Read`n  - read_file (Gemini CLI alias)
   - Grep
   - Glob
 ---
@@ -222,3 +222,6 @@ The reviewer is now a **blocking** gate, not advisory. The user does not see the
 - Score page speed and mobile as full credit only when Gate 3 evidence exists.
   If evidence is unavailable, mark N/A and reweight the Technical Elements
   denominator before reporting the 15-point category score
+
+
+> Gemini CLI: same role, tools map to read_file/write_file/edit/glob/grep/run_shell. No Bash? delegate script run to orchestrator.

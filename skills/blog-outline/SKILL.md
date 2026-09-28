@@ -146,3 +146,6 @@ Save the outline to `outlines/[slug]-outline.md` or to a user-specified path.
 Confirm the outline is ready for `/blog write` to consume.
 
 If the `outlines/` directory does not exist, create it.
+
+## Gemini CLI note
+Run under Gemini CLI by loading adapters/gemini/GEMINI.md first. Map Task(subagent)->sequential inline steps, tools Read/Write/Edit/Glob/Grep/Bash/WebFetch/WebSearch -> read_file/write_file/edit/glob/grep/run_shell/web_fetch/web_search, scripts dir $HOME/.gemini/scripts (override GEMINI_BLOG_SCRIPTS_DIR).

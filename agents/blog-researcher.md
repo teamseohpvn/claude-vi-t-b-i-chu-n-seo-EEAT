@@ -8,7 +8,7 @@ description: >
 tools:
   - WebSearch
   - WebFetch
-  - Read
+  - Read`n  - read_file (Gemini CLI alias)
   - Grep
   - Glob
 ---
@@ -274,3 +274,6 @@ When researching for blog posts, find 2-3 relevant YouTube videos for embedding:
 - Source is a content mill or SEO blog (non-research)
 - Statistic only appears on one low-authority site
 - Number feels suspiciously precise for a broad claim
+
+
+> Gemini CLI: same role, tools map to read_file/write_file/edit/glob/grep/run_shell. No Bash? delegate script run to orchestrator.

@@ -234,3 +234,6 @@ If the post has a published URL and blog-google credentials are available:
    - Top 3 opportunities with estimated savings
 4. If skipped, report the reason: `SKIPPED: credentials unavailable`,
    `SKIPPED: unpublished URL`, or the specific PageSpeed error.
+
+## Gemini CLI note
+Run under Gemini CLI by loading adapters/gemini/GEMINI.md first. Map Task(subagent)->sequential inline steps, tools Read/Write/Edit/Glob/Grep/Bash/WebFetch/WebSearch -> read_file/write_file/edit/glob/grep/run_shell/web_fetch/web_search, scripts dir $HOME/.gemini/scripts (override GEMINI_BLOG_SCRIPTS_DIR).

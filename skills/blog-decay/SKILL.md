@@ -86,3 +86,6 @@ business value:
 Use `blog-google` to collect Search Console exports when live credentials are
 available. Use `blog-rewrite` after decay detection when the recommended action
 is refresh/update content and the page is worth improving.
+
+## Gemini CLI note
+Run under Gemini CLI by loading adapters/gemini/GEMINI.md first. Map Task(subagent)->sequential inline steps, tools Read/Write/Edit/Glob/Grep/Bash/WebFetch/WebSearch -> read_file/write_file/edit/glob/grep/run_shell/web_fetch/web_search, scripts dir $HOME/.gemini/scripts (override GEMINI_BLOG_SCRIPTS_DIR).

@@ -495,3 +495,6 @@ On any block, capture `<folder>/preflight-report.json`, re-dispatch the blog-wri
 
 ### Phase 7: Delivery
 Present the completed article only after Phase 6.5 returns all gates passing. Include `<folder>/preview/*.png` screenshots and the compact completion summary described in `skills/blog-write/references/delivery.md`.
+
+## Gemini CLI note
+Run under Gemini CLI by loading adapters/gemini/GEMINI.md first. Map Task(subagent)->sequential inline steps, tools Read/Write/Edit/Glob/Grep/Bash/WebFetch/WebSearch -> read_file/write_file/edit/glob/grep/run_shell/web_fetch/web_search, scripts dir $HOME/.gemini/scripts (override GEMINI_BLOG_SCRIPTS_DIR).

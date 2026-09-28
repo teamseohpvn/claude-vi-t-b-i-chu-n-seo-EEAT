@@ -305,3 +305,6 @@ rendered DOM. Server-rendered markup is still more portable for non-Google
 crawlers, but source-only JSON-LD is not a Google requirement. For dynamic
 markup, validate the rendered URL, confirm the values match visible content,
 and avoid delayed or failed client requests that leave the rendered DOM empty.
+
+## Gemini CLI note
+Run under Gemini CLI by loading adapters/gemini/GEMINI.md first. Map Task(subagent)->sequential inline steps, tools Read/Write/Edit/Glob/Grep/Bash/WebFetch/WebSearch -> read_file/write_file/edit/glob/grep/run_shell/web_fetch/web_search, scripts dir $HOME/.gemini/scripts (override GEMINI_BLOG_SCRIPTS_DIR).

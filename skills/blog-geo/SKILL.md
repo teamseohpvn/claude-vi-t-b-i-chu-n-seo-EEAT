@@ -309,3 +309,6 @@ It returns a non-calibrated 0-100 overall heuristic plus per-engine subscores
 for Google AI Overview, Perplexity, and ChatGPT, a factor breakdown, and up to
 three highest-impact fixes. Legacy `overall_probability` output is retained
 only as a compatibility alias.
+
+## Gemini CLI note
+Run under Gemini CLI by loading adapters/gemini/GEMINI.md first. Map Task(subagent)->sequential inline steps, tools Read/Write/Edit/Glob/Grep/Bash/WebFetch/WebSearch -> read_file/write_file/edit/glob/grep/run_shell/web_fetch/web_search, scripts dir $HOME/.gemini/scripts (override GEMINI_BLOG_SCRIPTS_DIR).

@@ -238,3 +238,6 @@ If no persona exists when `/blog brand init` runs, the voice questions still pro
 - **Files already exist on init**: ask whether to overwrite or run update instead.
 - **Persona referenced but missing**: ask whether to leave the persona reference blank or create one.
 - **Reader provides minimal answers**: prompt for at least 2 audience bullets and 3 editorial rules; refuse to write skeletons.
+
+## Gemini CLI note
+Run under Gemini CLI by loading adapters/gemini/GEMINI.md first. Map Task(subagent)->sequential inline steps, tools Read/Write/Edit/Glob/Grep/Bash/WebFetch/WebSearch -> read_file/write_file/edit/glob/grep/run_shell/web_fetch/web_search, scripts dir $HOME/.gemini/scripts (override GEMINI_BLOG_SCRIPTS_DIR).

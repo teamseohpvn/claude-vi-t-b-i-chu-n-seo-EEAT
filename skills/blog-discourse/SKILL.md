@@ -220,3 +220,6 @@ The downstream skill uses DISCOURSE.md as a research-input alongside its own wor
 ## Attribution
 
 `blog-discourse` adapts the multi-platform discourse-research methodology of `last30days-skill` v3.2.1 (Matt Van Horn, MIT, https://github.com/mvanhorn/last30days-skill). The upstream uses platform APIs (Reddit, X, YouTube, TikTok, HN, Polymarket, GitHub, Bluesky, etc.); this sub-skill is API-free, using WebSearch with platform-targeted site operators. The methodology (pre-flight trap classes, named-entity decomposition, cross-source clustering, freshness floors, synthesis-contract LAWs) is preserved; the engine is not.
+
+## Gemini CLI note
+Run under Gemini CLI by loading adapters/gemini/GEMINI.md first. Map Task(subagent)->sequential inline steps, tools Read/Write/Edit/Glob/Grep/Bash/WebFetch/WebSearch -> read_file/write_file/edit/glob/grep/run_shell/web_fetch/web_search, scripts dir $HOME/.gemini/scripts (override GEMINI_BLOG_SCRIPTS_DIR).

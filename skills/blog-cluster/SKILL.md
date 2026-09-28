@@ -337,3 +337,6 @@ Return a concise summary to the user with totals, the scorecard path, and the ne
 | `blog-outline` | Generates a single SERP-informed outline | blog-cluster generates an outline-equivalent across an entire cluster, then writes the posts. |
 
 blog-cluster is the general contractor: it analyzes the topic, draws the data-driven plan, and builds the entire structure from a single seed keyword.
+
+## Gemini CLI note
+Run under Gemini CLI by loading adapters/gemini/GEMINI.md first. Map Task(subagent)->sequential inline steps, tools Read/Write/Edit/Glob/Grep/Bash/WebFetch/WebSearch -> read_file/write_file/edit/glob/grep/run_shell/web_fetch/web_search, scripts dir $HOME/.gemini/scripts (override GEMINI_BLOG_SCRIPTS_DIR).

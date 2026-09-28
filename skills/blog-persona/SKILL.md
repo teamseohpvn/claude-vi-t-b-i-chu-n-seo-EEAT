@@ -224,3 +224,6 @@ expects the score to move after persona activation.
 - **Empty personas directory**: When running list or show with no personas saved, prompt the user to create one first
 - **Name conflicts**: If a persona name already exists during create, ask whether to overwrite or choose a different name
 - **Malformed JSON**: If a persona file is corrupted, report the error and offer to recreate it from the interview
+
+## Gemini CLI note
+Run under Gemini CLI by loading adapters/gemini/GEMINI.md first. Map Task(subagent)->sequential inline steps, tools Read/Write/Edit/Glob/Grep/Bash/WebFetch/WebSearch -> read_file/write_file/edit/glob/grep/run_shell/web_fetch/web_search, scripts dir $HOME/.gemini/scripts (override GEMINI_BLOG_SCRIPTS_DIR).

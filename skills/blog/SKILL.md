@@ -9,7 +9,7 @@ description: >
   user says "blog", "blog post", "blog audit", "topic cluster",
   "multilingual blog", or any /blog subcommand.
 license: MIT
-compatibility: Requires Claude Code and Python 3.11+ for quality scoring
+compatibility: Requires Claude Code OR Gemini CLI and Python 3.11+ for quality scoring
 metadata:
   author: AgriciDaniel
   version: "2.2.0"
@@ -345,3 +345,6 @@ DISCOURSE.md adds a recency-and-engagement lens to research (what real practitio
 | Use tier 4-5 sources | Low authority hurts E-E-A-T |
 | Generate low-value variations without research | Scaled, interchangeable pages fail the reader-value and evidence requirements |
 | Skip visual elements entirely | Blogs with images get significantly more views and social engagement |
+
+## Gemini CLI note
+Run under Gemini CLI by loading adapters/gemini/GEMINI.md first. Map Task(subagent)->sequential inline steps, tools Read/Write/Edit/Glob/Grep/Bash/WebFetch/WebSearch -> read_file/write_file/edit/glob/grep/run_shell/web_fetch/web_search, scripts dir $HOME/.gemini/scripts (override GEMINI_BLOG_SCRIPTS_DIR).

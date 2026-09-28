@@ -86,3 +86,6 @@ voice, readability, vocabulary, and tone settings.
 - **Missing paths**: Skip missing paths and include a warning in the profile.
 - **Unsupported files**: Skip unsupported file types and include a warning.
 - **Empty samples**: Return zeroed metrics rather than crashing.
+
+## Gemini CLI note
+Run under Gemini CLI by loading adapters/gemini/GEMINI.md first. Map Task(subagent)->sequential inline steps, tools Read/Write/Edit/Glob/Grep/Bash/WebFetch/WebSearch -> read_file/write_file/edit/glob/grep/run_shell/web_fetch/web_search, scripts dir $HOME/.gemini/scripts (override GEMINI_BLOG_SCRIPTS_DIR).
